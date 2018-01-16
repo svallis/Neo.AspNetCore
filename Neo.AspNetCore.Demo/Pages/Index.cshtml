@@ -1,0 +1,23 @@
+﻿@page
+@model IndexModel
+
+<h2>Neo.AspNetCore.Demo</h2>
+
+<h4>Existing Wallet Address</h4>
+
+<ul>
+    <li><strong>Address:</strong> @Model.Existing.Address</li>
+    <li><strong>NEO:</strong> @Model.Existing.Neo.Balance</li>
+    <li><strong>GAS:</strong> @Model.Existing.Gas.Balance</li>
+    <li><strong>Network: </strong> @Model.Existing.Net</li>
+</ul>
+
+<h4>Generate New Address</h4>
+
+<ul>
+    <li><strong>Private Key:</strong> @Model.GeneratedKey.PrivateKey.ToHexString()</li>
+    <li><strong>Address:</strong> @Model.Generated.Address</li>
+    <li><strong>NEO:</strong> @Model.Generated.Neo.Balance</li>
+    <li><strong>GAS:</strong> @Model.Generated.Gas.Balance</li>
+    <li><strong>Network: </strong> @Model.Generated.Net</li>
+</ul>
